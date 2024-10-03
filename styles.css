@@ -1,5 +1,5 @@
 .background {
-    background: url(https://images.sidearmdev.com/convert?url=https%3a%2f%2fdxbhsrqyrr690.cloudfront.net%2fsidearm.nextgen.sites%2funionathletics.com%2fimages%2f2021%2f5%2f11%2f2019_Union_AerialPhotos_11.png&type=webp) no-repeat center;
+    background: url() no-repeat center;
     background-size: cover;
     width: 100%;
 }
@@ -85,18 +85,17 @@
     }
 }
 
-div {
+.im {
+    padding-right: 25px;
+}
+
+.typer {
     display: flex;
-    margin: 4%;
-    padding: 2%;
-    box-shadow: inset 0 0 12px blue;
- }
- p {
     font-family: "Courier Monospace";
     font-size: 2em;
-    color: red;
- }
- p:last-of-type {
+    color: beige;
+}
+#cursor:last-of-type {
     animation: type 0.33s infinite;
  }
  @keyframes type{

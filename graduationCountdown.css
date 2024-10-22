@@ -90,10 +90,6 @@
     }
 }
 
-.im {
-    padding-right: 15px;
-}
-
 .typer {
     display: flex;
     font-family: "Courier Monospace";
@@ -103,10 +99,3 @@
     padding-right: 10px;
     padding-bottom: 10px;
 }
-
-#cursor:last-of-type {
-    animation: type 0.33s infinite;
- }
- @keyframes type{
-    to { opacity: .0; }
- }

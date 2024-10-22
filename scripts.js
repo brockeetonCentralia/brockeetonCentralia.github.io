@@ -13,8 +13,7 @@ function typeNow() {
             deleteNow();
             return false;
         };
-        counter = setTimeout(loopTyping, 100);
-        
+        counter = setTimeout(loopTyping, 220);
     };
     loopTyping();
 };

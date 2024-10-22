@@ -1,33 +1,3 @@
-.background {
-    background-color: darkolivegreen;
-    background-size: cover;
-    width: 100%;
-}
-  
-.background:before {
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-  
-.background .container {
-    height: 100vh;
-    z-index: 1;
-    position: relative;
-}
-  
-.background h1 {
-    font-size: 1.5em;
-}
-  
-.background h2 {
-    font-size: 1.2em;
-}
-
 .navbar {
     background-color: antiquewhite;
     height: 80px;
@@ -89,24 +59,3 @@
         visibility: visible;
     }
 }
-
-.im {
-    padding-right: 15px;
-}
-
-.typer {
-    display: flex;
-    font-family: "Courier Monospace";
-    font-size: 1.75em;
-    color: beige;
-    overflow-wrap: normal;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
-#cursor:last-of-type {
-    animation: type 0.33s infinite;
- }
- @keyframes type{
-    to { opacity: .0; }
- }

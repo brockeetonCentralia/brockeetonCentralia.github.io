@@ -3,71 +3,74 @@
 }
 
 .navbar {
-    background-color: antiquewhite;
-    height: 80px;
-    margin: 20px;
-    border-radius: 16px;
-    padding: 0.5rem;
-}
-
-.offcanvas {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
 }
 
 .navbar-brand, .offcanvas-title {
-    font-weight: 700;
-    color:cadetblue;
-    font-size: 24px;
-    transition: 0.3s color;
+  font-weight: 700;
+  color:cadetblue;
+  font-size: 24px;
+  transition: 0.3s color;
 }
 
 .navbar-brand:hover, .offcanvas-title:hover {
-    font-weight: 700;
-    color:seagreen;
-    font-size: 24px;
-    transition: 0.3s color;
+  font-weight: 700;
+  color:seagreen;
+  font-size: 24px;
+  transition: 0.3s color;
 }
 
-.nav-item {
-    padding: 40px;
-}
-
-
-.navbar-toggler {
-    border: none;
-    font-size: 1.25rem;
+.nav-toggler {
+  border: none;
+  font-size: 1.25rem;
 }
 
 .nav-toggler:focus, .btn-close:focus {
-    box-shadow: none;
-    outline: none;
+  box-shadow: none;
+  outline: none;
 }
 
+.nav-link {
+  color:cadetblue;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color:seagreen;
+  font-weight: 700;
+}
 @media (min-width: 991px){
 
-    .nav-link::before {
-        content:"";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background-color: seagreen;
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-    }
+  .nav-link::before {
+      content:"";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: seagreen;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+  }
 
-    .nav-link:hover::before, .nav-link.active::before {
-        width: 100%;
-        visibility: visible;
-    }
+  .nav-link:hover::before, .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
+  }
 }
 
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 12%;
+    padding-bottom: 10%;
   }
   
   /* The actual timeline (the vertical ruler) */
@@ -76,10 +79,10 @@
     position: absolute;
     width: 6px;
     background-color: blue;
-    top: 0;
-    bottom: 0;
+    top: 150px;
+    bottom: 120px;
     left: 50%;
-    margin-left: -3px;
+    margin-left: -7px;
   }
   
   /* Container around content */
@@ -96,7 +99,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -8px;
     background-color: blue;
     border: 4px solid #FF9F55;
     top: 15px;

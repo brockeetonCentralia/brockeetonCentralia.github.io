@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
 }
+body {
+  background-color: rgb(31, 41, 17) !important;
+}
 
 .navbar {
-  background-color: antiquewhite;
+  background-color: rgb(253, 232, 203);
   height: 80px;
   margin: 20px;
   border-radius: 16px;
@@ -78,7 +81,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: blue;
+    background-color: rgb(253, 232, 203);
     top: 150px;
     bottom: 120px;
     left: 50%;
@@ -100,8 +103,8 @@
     width: 25px;
     height: 25px;
     right: -8px;
-    background-color: blue;
-    border: 4px solid #FF9F55;
+    background-color: rgb(57, 73, 31);
+    border: 4px solid rgb(253, 232, 203);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -126,9 +129,9 @@
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid seagreen;
+    border: medium solid rgb(253, 232, 203);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent seagreen;
+    border-color: transparent transparent transparent rgb(253, 232, 203);
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -140,9 +143,9 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid seagreen;
+    border: medium solid rgb(253, 232, 203);
     border-width: 10px 10px 10px 0;
-    border-color: transparent seagreen transparent transparent;
+    border-color: transparent rgb(253, 232, 203) transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -153,9 +156,14 @@
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: seagreen;
+    background-color: rgb(253, 232, 203);
     position: relative;
     border-radius: 6px;
+    transition: transform .5s;
+  }
+  
+  .content:hover {
+    transform: scale(1.1);
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */

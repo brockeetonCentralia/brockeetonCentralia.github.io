@@ -3,7 +3,7 @@ body {
   }
 
 .navbar {
-    background-color: antiquewhite;
+    background-color: rgb(253, 232, 203);
     height: 80px;
     margin: 20px;
     border-radius: 16px;
@@ -64,3 +64,21 @@ body {
         visibility: visible;
     }
   }
+
+.w3-content {
+  padding-top: 8%;
+}
+
+.w3-card {
+  border-radius: 10px;
+  background-color: rgb(253, 232, 203);
+}
+
+.w3-card-4 {
+  border-radius: 10px;
+  background-color: rgb(253, 232, 203);
+}
+
+.footer-1 {
+  background-color: rgb(253, 232, 203);
+}

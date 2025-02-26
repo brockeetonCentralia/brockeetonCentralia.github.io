@@ -1,23 +1,23 @@
-var countDownDate = new Date("June 17, 2025 21:00:00").getTime();
+var countDownDate = new Date("June 17, 2025 12:00:00").getTime();
 
 let i = 0;
 let counter;
 // let pause;
 
-function typeNow() {
-    let word = countDownDate[i].split("");
-    var loopTyping = function() {
-        if (word.length > 0) {
-            document.getElementById('text').innerHTML += word.shift();
-        } else {
-            // pause = setTimeout(400);
-            // deleteNow();
-            return false;
-        };
-        counter = setTimeout(loopTyping, 220);
-    };
-    loopTyping();
-};
+// function typeNow() {
+//     let word = countDownDate[i].split("");
+//     var loopTyping = function() {
+//         if (word.length > 0) {
+//             document.getElementById('text').innerHTML += word.shift();
+//         } else {
+//             // pause = setTimeout(400);
+//             // deleteNow();
+//             return false;
+//         };
+//         counter = setTimeout(loopTyping, 220);
+//     };
+//     loopTyping();
+// };
 
 var x = setInterval(function() {
 
@@ -35,7 +35,7 @@ var x = setInterval(function() {
         clearInterval(x);
         document.getElementById("counter").innerHTML = "Expired";
     }
-}, 1000);
+});
 
 // function deleteNow() {
 //     let word = words[i].split("");

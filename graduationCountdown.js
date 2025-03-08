@@ -2,22 +2,6 @@ var countDownDate = new Date("June 17, 2025 12:00:00").getTime();
 
 let i = 0;
 let counter;
-// let pause;
-
-// function typeNow() {
-//     let word = countDownDate[i].split("");
-//     var loopTyping = function() {
-//         if (word.length > 0) {
-//             document.getElementById('text').innerHTML += word.shift();
-//         } else {
-//             // pause = setTimeout(400);
-//             // deleteNow();
-//             return false;
-//         };
-//         counter = setTimeout(loopTyping, 220);
-//     };
-//     loopTyping();
-// };
 
 var x = setInterval(function() {
 
@@ -37,23 +21,40 @@ var x = setInterval(function() {
     }
 });
 
-// function deleteNow() {
-//     let word = words[i].split("");
-//     var loopDeleting = function() {
-//         if (word.length > 0) {
-//             word.pop();
-//             document.getElementById('text').innerHTML = word.join("");
-//         } else {
-//             if (words.length > (i + 1)) {
-//                 i++;
-//             } else {
-//                 i = 0;
-//             };
-//             typeNow();
-//             return false;
-//         };
-//         counter = setTimeout(loopDeleting, 100);
-//     };
-//     loopDeleting();
-// };
-typeNow();
+function updateDonutChart (el, percent, donut) {
+    percent = Math.round(percent);
+
+    if (percent > 100) {
+        percent = 100;
+    }
+    else if (percent < 0) {
+        percent = 0;
+    }
+
+    var deg = Math.round(360 * (percent / 100));
+
+    if (percent > 50) {
+        $(el + ' .pie').css('clip', 'rect(auto, auto, auto, auto)');
+        $(el + ' .right-side').css('transform', 'rotate(180deg)');
+    }
+    else {
+        $(el + ' .pie').css('clip', 'rect(0, 1em, 1em, 0.5em)');
+        $(el + ' .right-side').css('transform', 'rotate(0deg)');
+    }
+
+    if (donut) {
+        $(el + ' .right-side').css('border-width', '0.1em');
+        $(el + ' .left-side').css('border-width', '0.1em');
+        $(el + 'shadow').css('border-width', '0.1em');
+    }
+    else {
+        $(el + ' .right-side').css('border-width', '0.5em');
+        $(el + ' .left-side').css('border-width', '0.5em');
+        $(el + ' .shadow').css('border-width', '0.5em');
+    }
+    $(el + ' .num').text(percent);
+    $(el + ' .left-side').css('transform', 'rotate(' + deg + 'deg)');
+}
+
+//figure out how to pass date in
+updateDonutChart();

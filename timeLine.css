@@ -163,7 +163,7 @@ body {
   }
   
   .content:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
